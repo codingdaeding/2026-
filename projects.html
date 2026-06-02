@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>프로젝트 / 최승빈 포트폴리오</title>
+  <meta name="description" content="최승빈 포트폴리오 사이트" />
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <script>
+    if (localStorage.getItem("theme") === "dark" || !localStorage.getItem("theme")) {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      
+      <div class="top">
+        <h1>최승빈</h1>
+        <p>프론트엔드 중심 포트폴리오</p>
+        <small>Updated: 2026-06-02</small>
+        <button type="button" class="theme-toggle" id="themeToggle">다크 모드</button>
+      </div>
+      
+      <nav aria-label="주요 메뉴">
+        <ul>
+          <li><a href="index.html">01. 홈 (Home)</a></li>
+          <li><a href="about.html">02. 소개 (About)</a></li>
+          <li><a href="skills.html">03. 기술 (Skills)</a></li>
+          <li><a href="projects.html" aria-current="page">04. 프로젝트 (Projects)</a></li>
+          <li><a href="experience.html">05. 경험 (Experience)</a></li>
+          <li><a href="education.html">06. 학력/자격 (Education)</a></li>
+          <li><a href="contact.html">07. 연락 (Contact)</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>프로젝트</h2>
+      <p>대표 프로젝트 1개를 중심으로 역할, 사용 기술, 주요 기능을 정리했습니다.</p>
+    </section>
+
+    <article class="card">
+      <h3>프로젝트 1. "내와라 술상" 음원 발매</h3>
+
+      <div class="card-img-wrapper">
+        <img src="assets/images/alcohol.png" alt="내와라 술상 앨범 아트워크" class="card-img" />
+      </div>
+
+      <p><strong>기간:</strong> 2025.06 ~ 2025.07</p>
+      <p><strong>인원:</strong> 2명</p>
+      <p><strong>역할:</strong> 비트메이킹, 프로듀싱</p>
+      <p><strong>기술:</strong> Ableton, beat mixing, beat mastering</p>
+      <ul>
+        <li>비트(간주)를 프로듀싱하는 역할</li>
+        <li>함께한 래퍼와 아이디어 구성</li>
+      </ul>
+      <p><strong>배운 점:</strong> 비트메이킹에서 소통의 중요성을 이해했습니다.</p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 최승빈 포트폴리오</p>
+    </div>
+  </footer>
+  <button type="button" class="to-top" id="toTop">▲ TOP</button>
+  <script src="assets/script.js"></script>
+</body>
+</html>
