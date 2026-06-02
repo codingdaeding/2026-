@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>학력 / 자격 / 최승빈 포트폴리오</title>
+  <meta name="description" content="최승빈 포트폴리오 사이트" />
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- ★ 브라우저가 흰 배경을 그리기 전에 다크모드 클래스를 미리 주입하여 깜빡임을 차단합니다. -->
+  <script>
+    if (localStorage.getItem("theme") === "dark" || !localStorage.getItem("theme")) {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+</head>
+<body>
+  <!-- ★ 1번 트랙리스트 세로형 플렉스 헤더 적용 -->
+  <header>
+    <div class="container">
+      
+      <!-- 왼쪽: 네임 타이틀 섹션 -->
+      <div class="top">
+        <h1>최승빈</h1>
+        <p>프론트엔드 중심 포트폴리오</p>
+        <small>Updated: 2026-06-02</small>
+        <button type="button" class="theme-toggle" id="themeToggle">다크 모드</button>
+      </div>
+      
+      <!-- 오른쪽: 세로형 음원 트랙리스트 내비게이션 (현재 페이지: 06. 학력/자격) -->
+      <nav aria-label="주요 메뉴">
+        <ul>
+          <li><a href="index.html">01. 홈 (Home)</a></li>
+          <li><a href="about.html">02. 소개 (About)</a></li>
+          <li><a href="skills.html">03. 기술 (Skills)</a></li>
+          <li><a href="projects.html">04. 프로젝트 (Projects)</a></li>
+          <li><a href="experience.html">05. 경험 (Experience)</a></li>
+          <li><a href="education.html" aria-current="page">06. 학력/자격 (Education)</a></li>
+          <li><a href="contact.html">07. 연락 (Contact)</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>학력 / 자격</h2>
+      <p>학력과 자격, 활동 내역을 간단하게 정리했습니다.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>학력</h3>
+        <ul>
+          <li>가천대학교 컴퓨터공학과 재학</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>자격 / 학습</h3>
+        <ul>
+          <li>웹 개발 기초 학습 진행 중</li>
+          <li>프로그래밍 언어 및 실습 과목 이수</li>
+          <li>힙합 비트메이킹/프로듀싱 학습 중</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>활동</h3>
+        <ul>
+          <li>팀 프로젝트 참여</li>
+          <li>프로그래밍 실습 및 발표 경험</li>
+          <li>음원 발매</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 최승빈 포트폴리오</p>
+    </div>
+  </footer>
+  <button type="button" class="to-top" id="toTop">▲ TOP</button>
+  <script src="assets/script.js"></script>
+</body>
+</html>

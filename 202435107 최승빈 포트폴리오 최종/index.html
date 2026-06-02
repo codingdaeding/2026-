@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>홈 / 최승빈 포트폴리오</title>
+  <meta name="description" content="최승빈 포트폴리오 사이트" />
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <script>
+    if (localStorage.getItem("theme") === "dark" || !localStorage.getItem("theme")) {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      
+      <div class="top">
+        <h1>최승빈</h1>
+        <p>프론트엔드 중심 포트폴리오</p>
+        <small>Updated: 2026-06-02</small>
+        <button type="button" class="theme-toggle" id="themeToggle">다크 모드</button>
+      </div>
+      
+      <nav aria-label="주요 메뉴">
+        <ul>
+          <li><a href="index.html" aria-current="page">01. 홈 (Home)</a></li>
+          <li><a href="about.html">02. 소개 (About)</a></li>
+          <li><a href="skills.html">03. 기술 (Skills)</a></li>
+          <li><a href="projects.html">04. 프로젝트 (Projects)</a></li>
+          <li><a href="experience.html">05. 경험 (Experience)</a></li>
+          <li><a href="education.html">06. 학력/자격 (Education)</a></li>
+          <li><a href="contact.html">07. 연락 (Contact)</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h2>홈</h2>
+      <p>안녕하세요. 최승빈의 포트폴리오 사이트입니다. 웹 프론트엔드 개발과 비트메이킹을 중심으로 프로젝트, 경험, 기술 스택을 정리했습니다.</p>
+      <p>각 메뉴에서 자기소개, 기술, 프로젝트, 경험, 학력 및 연락처 정보를 확인할 수 있습니다.</p>
+    </section>
+
+    <section class="grid" aria-label="포트폴리오 전체 메뉴">
+      <article class="card">
+        <h3>소개</h3>
+        <p>관심 분야, 학습 방향, 목표 직무를 정리한 페이지입니다.</p>
+        <p><a href="about.html">소개 페이지 보기</a></p>
+      </article>
+
+      <article class="card">
+        <h3>기술 스택</h3>
+        <p>현재 학습하거나 사용할 수 있는 기술을 분야별로 정리했습니다.</p>
+        <p><a href="skills.html">기술 페이지 보기</a></p>
+      </article>
+
+      <article class="card">
+        <h3>프로젝트</h3>
+        <p>대표 프로젝트와 역할, 사용 기술, 배운 점을 정리했습니다.</p>
+        <p><a href="projects.html">프로젝트 페이지 보기</a></p>
+      </article>
+
+      <article class="card">
+        <h3>경험</h3>
+        <p>팀 프로젝트와 학습 활동을 중심으로 경험을 정리했습니다.</p>
+        <p><a href="experience.html">경험 페이지 보기</a></p>
+      </article>
+
+      <article class="card">
+        <h3>학력 / 자격</h3>
+        <p>학력, 자격, 활동 내역을 간단하게 정리했습니다.</p>
+        <p><a href="education.html">학력/자격 페이지 보기</a></p>
+      </article>
+
+      <article class="card">
+        <h3>연락</h3>
+        <p>이메일과 GitHub 등 연락 가능한 정보를 모아 두었습니다.</p>
+        <p><a href="contact.html">연락 페이지 보기</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 최승빈 포트폴리오</p>
+    </div>
+  </footer>
+  <button type="button" class="to-top" id="toTop">▲ TOP</button>
+  <script src="assets/script.js"></script>
+</body>
+</html>

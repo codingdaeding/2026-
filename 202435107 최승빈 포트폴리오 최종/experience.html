@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>경험 / 최승빈 포트폴리오</title>
+  <meta name="description" content="최승빈 포트폴리오 사이트" />
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- ★ 브라우저가 흰 배경을 그리기 전에 다크모드 클래스를 미리 주입하여 깜빡임을 차단합니다. -->
+  <script>
+    if (localStorage.getItem("theme") === "dark" || !localStorage.getItem("theme")) {
+      document.documentElement.classList.add("dark-mode");
+    }
+  </script>
+</head>
+<body>
+  <!-- ★ 1번 트랙리스트 세로형 플렉스 헤더 적용 -->
+  <header>
+    <div class="container">
+      
+      <!-- 왼쪽: 네임 타이틀 섹션 -->
+      <div class="top">
+        <h1>최승빈</h1>
+        <p>프론트엔드 중심 포트폴리오</p>
+        <small>Updated: 2026-06-02</small>
+        <button type="button" class="theme-toggle" id="themeToggle">다크 모드</button>
+      </div>
+      
+      <!-- 오른쪽: 세로형 음원 트랙리스트 내비게이션 (현재 페이지: 05. 경험) -->
+      <nav aria-label="주요 메뉴">
+        <ul>
+          <li><a href="index.html">01. 홈 (Home)</a></li>
+          <li><a href="about.html">02. 소개 (About)</a></li>
+          <li><a href="skills.html">03. 기술 (Skills)</a></li>
+          <li><a href="projects.html">04. 프로젝트 (Projects)</a></li>
+          <li><a href="experience.html" aria-current="page">05. 경험 (Experience)</a></li>
+          <li><a href="education.html">06. 학력/자격 (Education)</a></li>
+          <li><a href="contact.html">07. 연락 (Contact)</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>경험</h2>
+      <p>수업, 팀 프로젝트, 학습 활동을 중심으로 정리했습니다.</p>
+    </section>
+
+    <article class="card">
+      <h3>팀 프로젝트 발매 경험</h3>
+      <p><strong>기간:</strong> 2025년 1학기</p>
+      <ul>
+        <li>역할 분담 후 맡은 기능 구현</li>
+        <li>메이킹 과정에서 팀원과 활발한 소통</li>
+        <li>협업 과정에서 일정 관리의 중요성 이해</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>프로그래밍 학습 활동</h3>
+      <p><strong>내용:</strong> Python, HTML, CSS, JavaScript 실습</p>
+      <ul>
+        <li>기초 문법을 예제 중심으로 반복 연습</li>
+        <li>실습 문제를 직접 수정하며 오류 해결 경험 축적</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 최승빈 포트폴리오</p>
+    </div>
+  </footer>
+  <button type="button" class="to-top" id="toTop">▲ TOP</button>
+  <script src="assets/script.js"></script>
+</body>
+</html>
